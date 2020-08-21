@@ -140,7 +140,7 @@ Contact me in the form below for any inquiries
       <div class="inner">
         <h2>Contact Me</h2>
 
-        <form action="#" method="post">
+        <form action="POST" data-netlify="true" method="post">
           <div class="field half first">
             <label for="name">Name</label>
             <input name="name" id="name" type="text" placeholder="Name" />
@@ -158,6 +158,9 @@ Contact me in the form below for any inquiries
               placeholder="Message"
             ></textarea>
           </div>
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
           <ul class="actions">
             <li>
               <input value="Send Message" class="button alt" type="submit" />
@@ -166,7 +169,7 @@ Contact me in the form below for any inquiries
         </form>
 
         <ul class="icons">
-          <li>
+          <!-- <li>
             <a href="#" class="icon round fa-twitter"
               ><span class="label">Twitter</span></a
             >
@@ -175,9 +178,9 @@ Contact me in the form below for any inquiries
             <a href="#" class="icon round fa-facebook"
               ><span class="label">Facebook</span></a
             >
-          </li>
+          </li> -->
           <li>
-            <a href="#" class="icon round fa-instagram"
+            <a href="https://www.instagram.com/keithrdumont/" target="_blank" class="icon round fa-instagram"
               ><span class="label">Instagram</span></a
             >
           </li>
